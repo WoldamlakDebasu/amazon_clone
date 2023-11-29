@@ -5,9 +5,6 @@ import {
   ShoppingCartIcon,
 } from "@heroicons/react/outline";
 
-import { signIn } from "next-auth/client";
-
-
 function Header() {
 
   return (
