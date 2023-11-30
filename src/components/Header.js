@@ -5,6 +5,7 @@ import {
   ShoppingCartIcon,
 } from "@heroicons/react/outline";
 
+
 function Header() {
 
   return (
@@ -29,7 +30,7 @@ function Header() {
 
         {/*Right*/}
         <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
-          <div onClick= { signIn } className="cursor-pointer link">
+          <div className="cursor-pointer link">
             <p> Hello Malaika Girma</p>
             <p className="font-extrabold md:text-sm"> Account & lists</p>
           </div>
