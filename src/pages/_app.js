@@ -15,19 +15,23 @@ const MyApp = ({ Component,
   }, []);
 
   return (
+
     <div suppressHydrationWarning={true}>
       {isClient ? (
-        <SessionProvider session = {session}>
-    <Provider store={store}>
-      <Component {...pageProps} />
-    </Provider>
+    <SessionProvider session = {session}>
+     <Provider store={store}>
+       <Component {...pageProps} />
+     </Provider>
     </SessionProvider>
       ): null}
     </div>
+    
   );
 };
 
+
 export default MyApp;
+
 
 
 
