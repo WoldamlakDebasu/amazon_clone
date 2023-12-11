@@ -32,7 +32,7 @@ function CheckOutProduct({
     };
 
      const removeItemFromBasket = () => {
-
+      
        disPatch(removeFromBasket({ id }))
      }
 

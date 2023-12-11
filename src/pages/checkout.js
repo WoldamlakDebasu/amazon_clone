@@ -5,6 +5,8 @@ import { useSelector } from 'react-redux';
 import Currency from 'react-currency-formatter';
 import { useSession } from 'next-auth/react';
 
+
+
 function checkout() {
    const items= useSelector(selectItems);
    const { data:session} = useSession();
@@ -55,11 +57,11 @@ function checkout() {
             </span>
             </h2>
          <button className={`button mt-2 ${
-    !session &&
-    "bg-gradient-from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed"
-}`}>
-    {!session ? 'Sign in to checkout' : 'Proceed to checkout'}
-</button>
+      !session &&
+         "bg-gradient-from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed"
+       }`}>
+    {!session ? 'SignIn to checkout' : 'Proceed to checkout'}
+         </button>
             </>
           )}
         </div>
@@ -70,6 +72,9 @@ function checkout() {
 }
 
 export default checkout;
+
+
+
 
 
 
