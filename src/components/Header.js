@@ -5,10 +5,11 @@ import {
   ShoppingCartIcon,
 } from "@heroicons/react/outline";
 
-import { useSession, signIn, signOut } from "next-auth/react";
+
+import {useSession, signIn, signOut } from "next-auth/react";
 import { useRouter } from "next/router";
 import { selectItems } from "../slices/basketSlice";
-import {useSelector} from 'react-redux';
+import { useSelector } from 'react-redux';
 
 
 function Header() {
@@ -83,6 +84,8 @@ function Header() {
 }
 
 export default Header
+
+
 
 
 

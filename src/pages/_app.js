@@ -10,7 +10,6 @@ const MyApp = ({ Component,
  }) => {
 
   const [isClient, setIsClient] = useState(false);
-
   useEffect (()=> {setIsClient(true);
   }, []);
 
